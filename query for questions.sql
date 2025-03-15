@@ -1,4 +1,4 @@
---q1: What are the top 5 brands by receipts scanned for most recent month?
+--Q1: What are the top 5 brands by receipts scanned for most recent month?
 with temp as (
 SELECT 
 
@@ -30,7 +30,7 @@ where rk<=5
 
 
 
----How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?
+---Q2 How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?
 
 with temp as (
 SELECT 
@@ -121,7 +121,7 @@ from temp
 where rk==1
 
 
----q6 Which brand has the most transactions among users who were created within the past 6 months?
+---Q6 Which brand has the most transactions among users who were created within the past 6 months?
 
 with base as (
 select
